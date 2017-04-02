@@ -228,5 +228,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     wcnss_service
 
+# inherit from qcom-common
+include device/qcom/common/common.mk
+
 # Inherit from oppo-common
 $(call inherit-product, device/oppo/common/common.mk)
+I_WANT_A_QUAIL_STAR=true
